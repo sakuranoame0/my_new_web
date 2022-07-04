@@ -42,67 +42,65 @@ const Component = () => {
 
   return (
     <>
-      <body>
-        <div>
-          <h1>お問い合わせフォーム</h1>
-        </div>
-        <div class="margin">
-          お名前
-          <span class="required">必須</span>
-        </div>
-        <div>
-          <p>
-            <input value={name} onChange={changeName} />
-          </p>
-        </div>
-        <div class="block">
-          メールアドレス
-          <span class="required">必須</span>
-        </div>
-        <div>
-          <p>
-            <input value={email} onChange={changeEmail} />
-          </p>
-        </div>
-        <div class="block">
-          会社名
-          <span class="required">必須</span>
-        </div>
-        <div>
-          <p>
-            <input value={orgname} onChange={changeOrgname} />
-          </p>
-        </div>
-        <div class="block">
-          お問い合わせカテゴリ
-          <span class="required">必須</span>
-        </div>
-        <div>
-          <select value={category} onChange={changeCategory}>
-            <option>お問い合わせ</option>
-            <option>その他</option>
-          </select>
-        </div>
-        <div class="block">
-          お問い合わせ内容
-          <span class="required">必須</span>
-        </div>
-        <div>
-          <p>
-            <textarea
-              value={content}
-              onChange={changeContent}
-              cols="30"
-              rows="5"
-            ></textarea>
-          </p>
-        </div>
-        <div>
-          <button onClick={createPost} type="submit">
-            送信
-          </button>
-        </div>
-      </body>
+      <div>
+        <h1>お問い合わせフォーム</h1>
+      </div>
+      <div className="margin">
+        お名前
+        <span className="required">必須</span>
+      </div>
+      <div>
+        <p>
+          <input value={name} onChange={changeName} />
+        </p>
+      </div>
+      <div class="block">
+        メールアドレス
+        <span className="required">必須</span>
+      </div>
+      <div>
+        <p>
+          <input value={email} onChange={changeEmail} />
+        </p>
+      </div>
+      <div className="block">
+        会社名
+        <span className="required">必須</span>
+      </div>
+      <div>
+        <p>
+          <input value={orgname} onChange={changeOrgname} />
+        </p>
+      </div>
+      <div className="block">
+        お問い合わせカテゴリ
+        <span className="required">必須</span>
+      </div>
+      <div>
+        <select value={category} onChange={changeCategory}>
+          <option>お問い合わせ</option>
+          <option>その他</option>
+        </select>
+      </div>
+      <div className="block">
+        お問い合わせ内容
+        <span className="required">必須</span>
+      </div>
+      <div>
+        <p>
+          <textarea
+            value={content}
+            onChange={changeContent}
+            cols="30"
+            rows="5"
+          ></textarea>
+        </p>
+      </div>
+      <div>
+        <button onClick={createPost} type="submit">
+          送信
+        </button>
+      </div>
     </>
   );
 };
