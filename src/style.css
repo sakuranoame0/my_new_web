@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+}
+
+button {
+  display: inline-block;
+  border-radius: 5%; /* 角丸       */
+  font-size: 14pt; /* 文字サイズ */
+  text-align: center; /* 文字位置   */
+  cursor: pointer; /* カーソル   */
+  padding: 12px 12px; /* 余白       */
+  background: #ea5308; /* 背景色     */
+  color: #ffffff; /* 文字色     */
+  line-height: 1em; /* 1行の高さ  */
+  transition: 0.3s; /* なめらか変化 */
+  box-shadow: 6px 6px 3px #666666; /* 影の設定 */
+  border: 2px solid #ea5308; /* 枠の指定 */
+}
+
+button:hover {
+  box-shadow: none; /* カーソル時の影消去 */
+  color: #ea5308; /* 背景色     */
+  background: #ffffff; /* 文字色     */
+}
+
+.required {
+  background-color: #ea5308;
+  font-size: 12px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.block {
+  padding: 40px 0px 0px 0px;
+}
