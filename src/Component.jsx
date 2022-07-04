@@ -10,6 +10,8 @@ const Component = () => {
   const [category, setCategory] = useState();
   const [content, setContent] = useState();
 
+  const baseURL = "https://www.sejuku.net/blog/sample";
+
   const createPost = () => {
     axios
       .post(baseURL, {
