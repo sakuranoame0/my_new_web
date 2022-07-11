@@ -19,11 +19,15 @@ const Component = () => {
         email: { email },
         orgname: { orgname },
         category: { category },
-        content: { category }
+        content: { content }
       })
+
       .then((response) => {
-        setPost(response.data);
+        setPost(response.data).catch((err) => {
+          console.log("err:", err);
+        });
       });
+    console.log({ name }, { email }, { orgname }, { category }, { content });
   };
 
   const changeName = (e) => {

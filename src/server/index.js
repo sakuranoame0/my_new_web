@@ -1,11 +1,10 @@
-var request = require("request");
+const http = require("http");
 
-var options = {
-  url: "https://www.sejuku.net/blog/sample",
-  method: "POST",
-  form: { name: "太郎" }
-};
-
-request(options, function (error, response, body) {
-  console.log(body);
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { message: "受け付けました" });
+  res.end();
 });
+
+const port = 8080;
+server.listen(port);
+console.log("Server listen on port " + port);
